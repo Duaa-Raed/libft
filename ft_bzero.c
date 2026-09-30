@@ -27,6 +27,13 @@ void	ft_bzero(void *c, size_t n)
 }
 /*int	main()
 {	
-	char str[10]= "abcdefhjf";
-	printf("%zu\n",ft_strlen(str, 3));
+	char	str[10] = "abcdefhjf";
+
+	ft_bzero(str, 3);
+
+	for (int i = 0; i < 10; i++)
+		printf("%d ", (unsigned char)str[i]);
+
+	printf("\n");
+	return (0);
 }*/
