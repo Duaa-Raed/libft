@@ -42,6 +42,12 @@ int	ft_atoi(const char *str)
 	printf("%d\n", ft_atoi("   -123"));
 	printf("%d\n", ft_atoi("42abc"));
 	printf("%d\n", ft_atoi("abc42"));
+	printf("%d\n", ft_atoi(""));
+	printf("%d\n", ft_atoi("0"));
+	printf("%d\n", ft_atoi("     +42"));
+	printf("%d\n", ft_atoi("--42"));
+	printf("%d\n", ft_atoi("+-42"));
+	printf("%d\n", ft_atoi("42 123"));
 
 	return (0);
 }*/
