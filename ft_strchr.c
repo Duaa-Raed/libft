@@ -26,6 +26,36 @@ char	*ft_strchr(const char *s, int c)
 		i++;
 	}
 	if((char)c == '\0')
-		 return ((char *)&s[i]);
+		return ((char *)&s[i]);
 	return(NULL);
 }
+/*int	main(void)
+{
+	char	str[] = "42 Amman Libft";
+	char	*result;
+
+	result = ft_strchr(str, 'A');
+	if (result)
+		printf("Found: %s\n", result);
+	else
+		printf("Not found\n");
+
+	result = ft_strchr(str, 'x');
+	if (result)
+		printf("Found: %s\n", result);
+	else
+		printf("Not found\n");
+
+	result = ft_strchr(str, '\0');
+	if (result)
+		printf("Found null terminator\n");
+	else
+		printf("Not found\n");
+	
+	// print the addres 
+	result = ft_strchr(str, 'A');
+	if (result)
+		printf("%c\n", *result);
+
+	return (0);
+}*/
