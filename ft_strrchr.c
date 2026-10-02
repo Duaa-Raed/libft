@@ -14,18 +14,30 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
+	char	*last_char;
 
-	i = ft_strlen(s);
-	while (i >= 0)
+	last_char = NULL;
+	while (*s)
 	{
-		if (s[i - 1] == (char)c)
-		{
-			return ((char *)&s[i]);
-		}
-		i--;
+		if (*(unsigned char *)s == (unsigned char)c)
+			last_char= ((char *)s);
+		s++;
 	}
-	if((char)c == '\0')
-		 return ((char *)&s[i]);
-	return(NULL);
+	if (*(unsigned char *)s == (unsigned char)c)
+		return ((char *)s);
+	return (last_char);
 }
+/*int	main(void)
+{
+	char	*result;
+
+	result = ft_strrchr("banana", 'a');
+	printf("%s\n", result);
+
+	result = ft_strrchr("Hello World", 'o');
+	printf("%s\n", result);
+
+	result = ft_strrchr("42 Amman", 'z');
+	printf("%s\n", result ? result : "NULL");
+	return (0);
+}*/
