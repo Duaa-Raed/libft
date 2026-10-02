@@ -12,16 +12,6 @@
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *c)
-{
-	size_t	i;
-
-	i = 0;
-	while (c[i] != '\0')
-		i++;
-	return (i);
-}
-
 size_t	ft_strlcpy(char *dest, const char *src, size_t destsize)
 {
 	size_t	i;
@@ -44,3 +34,41 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t destsize)
 	char y[10]= " my world ";
 	printf("%zu\n",ft_strlcpy(x, y,5));
 }*/
+/*
+int	main(void)
+{
+char x[20];
+char y[20];
+size_t z;
+
+
+
+z = ft_strlcpy(x, "Hello",  sizeof(x));
+printf("Test 1: dest = [%s], return = %zu\n", x, z);
+
+
+z = ft_strlcpy(x, "Hello World", 5);
+printf("Test 2: dest = [%s], return = %zu\n", x, z);
+
+
+x[0] = 'X';
+z = ft_strlcpy(x, "Hello", 0);
+printf("Test 3: dest = [%s], return = %zu\n", x, z);
+
+
+z = ft_strlcpy(x, "", sizeof(x));
+printf("Test 4: dest = [%s], return = %zu\n", x, z);
+
+
+z = ft_strlcpy(y, "Hello", 1);
+printf("Test 5: dest = [%s], return = %zu\n", y, z);
+
+
+z = ft_strlcpy(y, "Hey", 4);
+printf("Test 6: dest = [%s], return = %zu\n", y, z);
+
+return (0);
+
+
+}*/
+
