@@ -14,9 +14,17 @@
 
 int	ft_tolower(int x)
 {
-	if (x >= 65 && x <= 97)
+	if (x >= 65 && x <= 90)
 	{
 		return (x + 32);
 	}
 	return (x);
 }
+/*int	main(void)
+{
+	printf("tolower A: %c\n", ft_tolower('A'));
+	printf("tolower Z: %c\n", ft_tolower('Z'));
+	printf("tolower a: %c\n", ft_tolower('a'));
+
+	return (0);
+}*/
