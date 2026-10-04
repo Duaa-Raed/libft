@@ -1,0 +1,55 @@
+#include "libft.h"
+
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+{
+	size_t	len;
+	size_t	i;
+	char	*result;
+	char	*end;
+
+	if (!s || !f)
+		return (NULL);
+	end = ft_strchr(s, '\0');
+	len = end - s;
+	result = malloc(sizeof(char) * (len + 1));
+	if (!result)
+		return (NULL);
+	i = 0;
+	while (i < len)
+	{
+		result[i] = f((unsigned int)i, s[i]);
+		i++;
+	}
+	result[len] = '\0';
+	return (result);
+}
+/*char	replace_first(unsigned int i, char c)
+{
+	if (i == 0)
+		return ('!');
+	return (c);
+}
+
+int	main(void)
+{
+	char	*str = "hello";
+	char	*result;
+
+	// استدعاء الفنكشن تبعتك
+	result = ft_strmapi(str, replace_first);
+
+	// التأكد من إن الحجز بـ malloc نجح
+	if (!result)
+	{
+		printf("Error: Malloc failed!\n");
+		return (1);
+	}
+
+	// طباعة النص الأصلي والنص المعدل
+	printf("Original : %s\n", str);
+	printf("Result   : %s\n", result);
+
+	// تحرير الذاكرة لمنع الـ Memory Leak
+	free(result);
+	return (0);
+}*/
