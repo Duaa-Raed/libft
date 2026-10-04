@@ -35,21 +35,18 @@ int	main(void)
 	char	*str = "hello";
 	char	*result;
 
-	// استدعاء الفنكشن تبعتك
 	result = ft_strmapi(str, replace_first);
 
-	// التأكد من إن الحجز بـ malloc نجح
 	if (!result)
 	{
 		printf("Error: Malloc failed!\n");
 		return (1);
 	}
 
-	// طباعة النص الأصلي والنص المعدل
 	printf("Original : %s\n", str);
 	printf("Result   : %s\n", result);
 
-	// تحرير الذاكرة لمنع الـ Memory Leak
+
 	free(result);
 	return (0);
 }*/
