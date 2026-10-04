@@ -15,21 +15,22 @@
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	i;
-	size_t	j;
 	size_t	dst_len;
 	size_t	src_len;
 
-	dst_len = ft_strlen(dst);
 	src_len = ft_strlen(src);
-	if (size == 0)
-		return (src_len);
-	if (dst_len >= size)
+	dst_len = 0;
+	while (dst_len < size && dst[dst_len])
+		dst_len++;
+	if (dst_len == size)
 		return (size + src_len);
-	i = dst_len;
-	j = 0;
-	while (src[j] && i < size - 1)
-		dst[i++] = src[j++];
-	dst[i] = '\0';
+	i = 0;
+	while (src[i] && dst_len + i < size - 1)
+	{
+		dst[dst_len + i] = src[i];
+		i++;
+	}
+	dst[dst_len + i] = '\0';
 	return (dst_len + src_len);
 }
 /*int	main(void)
@@ -52,6 +53,9 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	result = ft_strlcat(dst3, " Amman", 0);
 	printf("dst3: %s\n", dst3);
 	printf("return: %zu\n", result);
+
+	char	buf[5] = {'A', 'A', 'A', 'A', 'A'};
+	printf("%zu\n", ft_strlcat(buf, "xyz", 5));
 
 	return (0);
 }*/
