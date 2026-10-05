@@ -6,7 +6,7 @@
 /*   By: dalinein <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 16:43:26 by dalinein          #+#    #+#             */
-/*   Updated: 2026/09/29 13:56:54 by dalinein         ###   ########.fr       */
+/*   Updated: 2026/10/05 08:32:52 by dalinein         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strrchr(const char *s, int c)
 	while (*s)
 	{
 		if (*(unsigned char *)s == (unsigned char)c)
-			last_char= ((char *)s);
+			last_char = ((char *)s);
 		s++;
 	}
 	if (*(unsigned char *)s == (unsigned char)c)

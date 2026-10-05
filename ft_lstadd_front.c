@@ -1,26 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dalinein <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/05 08:24:20 by dalinein          #+#    #+#             */
-/*   Updated: 2026/10/05 08:24:23 by dalinein         ###   ########.fr       */
+/*   Created: 2026/10/05 11:07:10 by dalinein          #+#    #+#             */
+/*   Updated: 2026/10/05 11:20:59 by dalinein         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (!s)
-		return ;
-	write(fd, s, ft_strlen(s));
+	if(lst == NULL || new == NULL)
+		return;
+	new->next = *lst;
+	*lst = new;
 }
-/*int	main(void)
-{
-	ft_putstr_fd("Hello World", 1);
-	ft_putchar_fd('\n', 1);
-	return (0);
-}*/
