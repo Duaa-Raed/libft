@@ -6,7 +6,7 @@
 /*   By: dalinein <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 10:32:49 by dalinein          #+#    #+#             */
-/*   Updated: 2026/10/08 10:55:54 by dalinein         ###   ########.fr       */
+/*   Updated: 2026/10/08 14:48:28 by dalinein         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ void				*ft_memchr(const void *s, int c, size_t n);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
 void				*ft_memcpy(void *dst, const void *src, size_t n);
 void				*ft_memset(void *b, int c, size_t len);
+void *ft_memmove(void *dest, const void *src, size_t n);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strdup(const char *s);
 char				*ft_strjoin(char const *s1, char const *s2);
