@@ -1,43 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dalinein <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/05 11:43:29 by dalinein          #+#    #+#             */
-/*   Updated: 2026/10/08 09:50:06 by dalinein         ###   ########.fr       */
+/*   Created: 2026/10/08 11:36:14 by dalinein          #+#    #+#             */
+/*   Updated: 2026/10/08 11:43:29 by dalinein         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstlast(t_list *lst)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if (lst == NULL)
-		return (NULL);
-	while (lst->next != NULL)
+	if (!lst || !f)
+		return ;
+	while (lst != NULL)
+	{
+		f(lst->content);
 		lst = lst->next;
-	return (lst);
+	}
 }
-/*int main (void)
+/*
+void	print_content(void *content)
+{
+	printf("%s\n", (char *)content);
+}
+
+int main (void)
 {
 	t_list  *a;
 	t_list  *b;
 	t_list  *c;
-	t_list	*last;
 
 
-	a = ft_lstnew("A");
-	b = ft_lstnew("B");
-	c = ft_lstnew("C");
+	a = ft_lstnew("first");
+	b = ft_lstnew("second");
+	c = ft_lstnew("third");
 
 	a->next = b;
 	b->next = c;
 
-	last = ft_lstlast(a);
-
-	printf("last:%s\n",(char *)last->content);
+	ft_lstiter(a, print_content);
 
 	free(a);
 	free(b);

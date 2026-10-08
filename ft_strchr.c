@@ -6,7 +6,7 @@
 /*   By: dalinein <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/24 16:36:59 by dalinein          #+#    #+#             */
-/*   Updated: 2026/10/05 08:26:16 by dalinein         ###   ########.fr       */
+/*   Updated: 2026/10/08 10:08:44 by dalinein         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strchr(const char *s, int c)
 	}
 	if ((char)c == '\0')
 		return ((char *)&s[i]);
-	returni(NULL);
+	return (NULL);
 }
 /*int	main(void)
 {
