@@ -22,7 +22,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	{
 		next = (*lst)->next;
 		ft_lstdelone(*lst, del);
-		*lst = next->next;
+		*lst = next;
 	}
 }
 /*

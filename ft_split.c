@@ -12,9 +12,6 @@
 
 #include "libft.h"
 
-
-#include "libft.h"
-
 static int	count_words(char const *s, char c)
 {
 	int	i;
@@ -62,7 +59,10 @@ static int	fill_split(char const *s, char c, char **split)
 		{
 			split[j] = ft_substr(s, start, i - start);
 			if (!split[j])
-				return (free_split(split, j), 0);
+			{
+				free_split(split, j);
+				return (0);
+			}
 			j++;
 		}
 	}
