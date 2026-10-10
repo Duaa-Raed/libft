@@ -12,8 +12,6 @@
 
 #include "libft.h"
 
-#include "libft.h"
-
 static size_t	get_len(char const *s, unsigned int start, size_t len)
 {
 	size_t	slen;
