@@ -104,7 +104,7 @@ This creates `libft.a` at the root of the repository. Everything is compiled wit
 2. Compile your program and link it with the library:
 
 ```bash
-cc -Wall -Wextra -Werror main.c -L. -lft -o my_program
+cc -Wall -Wextra -Werror main.c 
 ```
 
 Small example:
@@ -131,12 +131,13 @@ Test programs are not part of the submission, so I write my own `main.c` files t
 
 ## Project structure
 
-
+```
 .
 ├── Makefile
 ├── libft.h
 ├── ft_*.c        (one file per function)
 └── README.md
+```
 
 ## Resources
 
