@@ -128,17 +128,15 @@ int	main(void)
 ### Testing
 
 Test programs are not part of the submission, so I write my own `main.c` files to test the functions and compare them with the originals.
-```
 
 ## Project structure
 
-```
+
 .
 ├── Makefile
 ├── libft.h
 ├── ft_*.c        (one file per function)
 └── README.md
-```
 
 ## Resources
 
