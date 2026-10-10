@@ -40,9 +40,8 @@ void				*ft_memmove(void *dst, const void *src, size_t n);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strdup(const char *s);
 char				*ft_strjoin(char const *s1, char const *s2);
-void				*ft_memmove(void *dst, const void *src, size_t n);
+size_t				ft_strlcat(char *dst, const char *src, size_t size);
 size_t				ft_strlcpy(char *dst, const char *src, size_t size);
-size_t				ft_strlcpy(char *dest, const char *src, size_t destsize);
 size_t				ft_strlen(const char *c);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 char				*ft_strnstr(const char *haystack, const char *needle,
