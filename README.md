@@ -143,13 +143,10 @@ Test programs are not part of the submission, so I write my own `main.c` files t
 
 ### References
 
-- [Linux man pages, section 3 (libc functions)](https://man7.org/linux/man-pages/dir_section_3.html)
+- [libc functions](https://42-cursus.gitbook.io/guide)
 - [cppreference: C string and character functions](https://en.cppreference.com/w/c/string/byte)
-- [Beej's Guide to C Programming](https://beej.us/guide/bgc/)
-- [GNU Make manual](https://www.gnu.org/software/make/manual/make.html)
-- [ar(1) man page](https://man7.org/linux/man-pages/man1/ar.1.html)
 - [GeeksforGeeks: Linked List Data Structure](https://www.geeksforgeeks.org/linked-list-data-structure/)
-- [The 42 Norm (norminette)](https://github.com/42School/norminette)
+- [The 42 Norm (norminette)](https://github.com/dawnbeen/c_formatter_42.git)
 - Discussions with other students during peer-learning.
 
 ### Use of AI
