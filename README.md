@@ -143,13 +143,18 @@ Test programs are not part of the submission, so I write my own `main.c` files t
 
 ### References
 
-- `man` pages of the original functions (`man 3 strlen`, `man 3 memmove`, `man 3 calloc`, etc.)
-- [The 42 Norm](https://github.com/42School/norminette)
+- [Linux man pages, section 3 (libc functions)](https://man7.org/linux/man-pages/dir_section_3.html)
+- [cppreference: C string and character functions](https://en.cppreference.com/w/c/string/byte)
+- [Beej's Guide to C Programming](https://beej.us/guide/bgc/)
+- [GNU Make manual](https://www.gnu.org/software/make/manual/make.html)
+- [ar(1) man page](https://man7.org/linux/man-pages/man1/ar.1.html)
+- [GeeksforGeeks: Linked List Data Structure](https://www.geeksforgeeks.org/linked-list-data-structure/)
+- [The 42 Norm (norminette)](https://github.com/42School/norminette)
 - Discussions with other students during peer-learning.
 
 ### Use of AI
 
-AI was used in two ways:
-
-- To help me understand what some functions are supposed to do (their expected behavior), before I wrote them myself.
-- To organize and format this `README.md` file.
+- **Functions written without AI help:** all the functions of the library except `ft_split` and `ft_memmove`. I wrote them myself, using the man pages and discussions with other students.
+- **Functions written with AI help:** `ft_split` and `ft_memmove`. I found them difficult and I did not fully understand them at first, so I asked AI to explain the logic and to help me fix my errors. After that, I reviewed the code, studied it until I understood it, and applied it.
+- **Understanding edge cases:** AI helped me understand which cases can be passed to the functions (for example empty strings, delimiters at the start or end of a string, and overlapping memory areas), because I had not understood them on my own.
+- **README:** AI was used to organize and format this file.
