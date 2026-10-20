@@ -33,30 +33,21 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	result[len] = '\0';
 	return (result);
 }
-/*char	replace_first(unsigned int i, char c)
+/*char	test(unsigned int i, char c)
 {
-	if (i == 0)
-		return ('!');
-	return (c);
+	(void)i;
+	(void)c;
+	return ("*");
 }
 
 int	main(void)
 {
-	char	*str = "hello";
-	char	*result;
-
-	result = ft_strmapi(str, replace_first);
-
-	if (!result)
-	{
-		printf("Error: Malloc failed!\n");
-		return (1);
-	}
-
-	printf("Original : %s\n", str);
-	printf("Result   : %s\n", result);
-
-
-	free(result);
+	char *str;
+	
+	str = ft_strmapi("duaa",test)
+	if(!str)
+		return(1);
+	printf("%s",str);
+	free(str);
 	return (0);
 }*/

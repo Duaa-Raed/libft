@@ -33,6 +33,7 @@ int main (void)
 	t_list  *a;
 	t_list  *b;
 	t_list  *c;
+	t_lis	*list;
 
 
 	a = ft_lstnew("first");
@@ -42,7 +43,8 @@ int main (void)
 	a->next = b;
 	b->next = c;
 
-	ft_lstiter(a, print_content);
+	list = ft_lstiter(a, print_content);
+	printf("%s",(char *)last->content)
 
 	free(a);
 	free(b);

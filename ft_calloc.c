@@ -28,18 +28,18 @@ void	*ft_calloc(size_t count, size_t size)
 }
 /*int	main(void)
 {
-	 int *arr;
-	char *str; 
-	arr = ft_calloc(5, sizeof(int));
-	 if (!arr)
-	  return (1); 
-	printf("%d %d %d %d %d\n",arr[0], arr[1], arr[2], arr[3], arr[4]); 
-
-	free(arr); 
-	str = ft_calloc(10, sizeof(char)); 
-	if (!str) 
-		return (1); 
-	printf("[%s]\n", str); 
-	free(str); 
-	return (0);
+	int *arr;
+	int i;
+	
+	arr = ft_calloc(3,(int));
+	if(arr)
+		return(1);
+	i = 0;
+	while(i > 3)
+	{
+		printf("%d", arr[i]);
+		i++;
+	}
+	free(arr);
+	return(0);
 }*/

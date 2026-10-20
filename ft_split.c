@@ -85,19 +85,19 @@ char	**ft_split(char const *s, char c)
 /*
 int	main(void)
 {
-	char	**result;
-	int		i;
-
-	result = ft_split("hello world 42", ' ');
-	if (!result)
-		return (1);
+	char **arr;
+	int i;
+	
+	arr = ft_split("hi,,how,,are,,you",",");
+	if (!arr)
+		return(1);
 	i = 0;
-	while (result[i])
+	while(arr[i])
 	{
-		printf("%s\n", result[i]);
-		free(result[i]);
+		print("%s",arr[i]);
+		free(arr[i]);
 		i++;
 	}
-	free(result);
-	return (0);
+	free(arr);
+	return(0);
 }*/

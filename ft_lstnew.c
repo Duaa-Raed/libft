@@ -25,13 +25,10 @@ t_list	*ft_lstnew(void *content)
 }
 /*int main (void)
 {
-	t_list  *node;
-
-	node = ft_lstnew("Hello");
-
-	printf("content:%s\n",(char *)node->content);
-	printf("next:%p\n",(void *)node->next);
-
+	t_list *node;
+	
+	node = ft_lstnew("hi")
+	printf("%s\n",(char *)node->content);
 	free(node);
 	return(0);
 }*/

@@ -23,16 +23,13 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	t_list  *lst;
 	t_list  *new;
-
-	lst = ft_lstnew("second");
-	new = ft_lstnew("first");
-
-	ft_lstadd_front(&lst, new);
-
-	printf("first:%s\n",(char *)lst->content);
-	printf("next:%s\n",(char *)lst->next->content);
-
-	free(new);
+	
+	lst = ft_lstnew("hi");
+	new = ft_lstnew("world");
+	
+	ft_lstadd_front(&lst,new);
+	printf("%s",(char *)lst->content);
 	free(lst);
+	free(new);
 	return(0);
 }*/

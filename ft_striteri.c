@@ -25,20 +25,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-/*void	upper_char(unsigned int i, char *c)
-{
-	(void)i;
-	if (*c >= 'a' && *c <= 'z')
-		*c = *c - 32;
-}
-
-int	main(void)
-{
-	char	str[] = "hello world";
-
-	printf("Before: %s\n", str);
-	ft_striteri(str, upper_char);
-	printf("After:  %s\n", str);
-
-	return (0);
-}*/
