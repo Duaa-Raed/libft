@@ -15,15 +15,18 @@
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*string;
+	size_t	len1;
+	size_t	len2;
 
 	if (!s1 || !s2)
 		return (NULL);
-	string = malloc (sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+	len1 = ft_strlen(s1);
+	len2 = ft_strlen(s2);
+	string = malloc(sizeof(char) * (len1 + len2 + 1));
 	if (!string)
 		return (NULL);
-	ft_memcpy(string, s1, ft_strlen(s1));
-	ft_memcpy(string + ft_strlen(s1), s2, ft_strlen(s2));
-	string[ft_strlen(s1) + ft_strlen(s2)] = '\0';
+	ft_strlcpy(string, s1, len1 + 1);
+	ft_strlcpy(string + len1, s2, len2 + 1);
 	return (string);
 }
 /*int	main(void)
